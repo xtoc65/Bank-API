@@ -1,0 +1,34 @@
+@mixin text-style($weight, $size, $margin-bottom: 0) {
+  font-weight: $weight;
+  font-size: $size;
+  margin-bottom: $margin-bottom;
+}
+
+.hero {
+  position: relative;
+
+  img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.hero-content {
+  position: relative;
+  top: -15rem;
+  left: 75%;
+  width: 200px;
+  background: white;
+  padding: 2rem;
+  text-align: left;
+
+  .subtitle {
+    @include text-style(bold, 1rem);
+    margin: 0;
+  }
+
+  .text {
+    @include text-style(normal, 0.9rem, 0);
+  }
+}
