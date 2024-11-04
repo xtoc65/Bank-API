@@ -5,4 +5,26 @@ body {
   background-color: #fafafa;
   margin: 0;
   padding: 0;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+}
+.features div {
+  flex: 1;
+  padding: 2.5rem;
+  text-align: center;
+}
+.features img {
+  width: 100px;
+  border: 10px solid #00bc77;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.features h3 {
+  color: #222;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }/*# sourceMappingURL=home.css.map */

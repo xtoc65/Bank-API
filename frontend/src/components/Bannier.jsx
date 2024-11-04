@@ -6,8 +6,8 @@ function BannierHeader() {
     <div class="hero">
       <img src={Bannier} alt="Bannière - plante" />
       
-      <div>
-        <section class="hero-content">
+      <div class="hero-content">
+        <section>
           <p class="subtitle">No fees.</p>
           <p class="subtitle">No minimum deposit.</p>
           <p class="subtitle">High interest rates.</p>

@@ -7,7 +7,6 @@ function PageNotFound() {
     <main className="error">
       <img src={notFoundImg} alt="Erreur 404" />
       <p>Oups! La page que vous avez demandez n'existe pas.</p>
-      <p className="link">Veuillez choisir un id valide</p>
     </main>
   );
 }

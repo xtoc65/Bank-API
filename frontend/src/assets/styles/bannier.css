@@ -1,5 +1,6 @@
 .hero {
   position: relative;
+  margin: 0 0 -10em 0;
 }
 .hero img {
   height: 300px;
@@ -27,4 +28,4 @@
   font-weight: normal;
   font-size: 0.9rem;
   margin-bottom: 0;
-}/*# sourceMappingURL=Bannier.css.map */
+}/*# sourceMappingURL=bannier.css.map */
