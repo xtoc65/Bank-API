@@ -1,10 +1,7 @@
 .nav_container {
-  padding: 30px 0em;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* max-width: 1440px; */
-  margin: 0em 4em;
 }
 .nav_container img {
   height: 60px;

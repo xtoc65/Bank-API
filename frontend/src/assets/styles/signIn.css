@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 70vh;
+  min-height: 80vh;
   background-color: #12002b;
   margin: auto;
 }
@@ -36,8 +36,7 @@
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-.sing-in section div .input .wrapper input[type=text],
-.sing-in section div .input .wrapper input[type=password] {
+.sing-in section div .input .wrapper input {
   padding: 8px;
   font-size: 1rem;
   border: 1px solid #ccc;
@@ -57,7 +56,7 @@
   font-size: 0.9rem;
   color: #666;
 }
-.sing-in section div .input .sign-in-button {
+.sing-in section div .input button {
   display: block;
   width: 100%;
   padding: 0.75rem;
@@ -70,10 +69,9 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.sing-in section div .input .sign-in-button:hover {
+.sing-in section div .input button:hover {
   background-color: #008e5b;
 }
 .sing-in section svg {
-  font-size: 3rem;
-  color: #00bc77;
-}/*# sourceMappingURL=singIn.css.map */
+  font-size: 2rem;
+}/*# sourceMappingURL=signIn.css.map */

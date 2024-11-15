@@ -1,0 +1,19 @@
+.user {
+  min-height: 80vh;
+  background-color: #12002b;
+  margin: auto;
+}
+.user div {
+  padding-top: 0.5em;
+  text-align: center;
+}
+.user h1 {
+  color: white;
+}
+.user button {
+  border-color: #00bc77;
+  background-color: #00bc77;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+}/*# sourceMappingURL=user.css.map */

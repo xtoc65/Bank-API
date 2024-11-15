@@ -9,7 +9,7 @@ function Home() {
   return (
     <main >
       <BannierHeader />
-      <section class="features">
+      <section className="features">
         <div>
           <img src={Chat} alt="Chat Icon"  />
           <h3>You are our #1 priority</h3>
