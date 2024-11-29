@@ -16,4 +16,30 @@
   color: #fff;
   font-weight: bold;
   padding: 10px;
+}
+
+.form div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form input {
+  border: 1px solid;
+  padding: 10px;
+  margin: 5px;
+  font-size: 1.2rem;
+}
+.form label {
+  font-weight: bold;
+  margin-left: 0.25rem;
+}
+.form__button-zone {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px;
+}
+.form .form__button {
+  width: 100px;
 }/*# sourceMappingURL=user.css.map */

@@ -1,5 +1,9 @@
 // Importation de NavLink depuis react-router-dom pour la navigation
 import { NavLink } from "react-router-dom";
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { logout } from "../store/UserSlice";
+import { fetchUserProfile } from "../services/fetchUserProfile";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
 
@@ -8,17 +12,42 @@ import Logo from "../assets/Logo.png";
 import "../assets/styles/header.css";
 
 function Header() {
+  const dispatch = useDispatch();
+  const { user } = useSelector((state) => state.user);
+
+  // Vérifie la présence du token dans localStorage au chargement du Header
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token && !user) {
+      dispatch(fetchUserProfile()); // Récupérer le profil si le token est présent
+    }
+  }, [dispatch, user]);
+
+  // Fonction de déconnexion
+  const handleLogout = (e) => {
+    e.preventDefault();
+    dispatch(logout());
+  };
   return (
     <header>
       <nav className="nav_container">
         <NavLink to="/">
           <img src={Logo} alt="Logo ArgentBank" />
         </NavLink>
-        <div>
-          <NavLink className="nav_link" to="/login">
-            <FontAwesomeIcon icon={faUserCircle} /> Sign In
-          </NavLink>
-        </div>
+        {user ? (
+          <div>
+            <span>{user.firstName}</span>
+            <NavLink className="nav_link" onClick={handleLogout}>
+              Se déconnecter
+            </NavLink>
+          </div>
+        ) : (
+          <div>
+            <NavLink className="nav_link" to="/login">
+              <FontAwesomeIcon icon={faUserCircle} /> Sign In
+            </NavLink>
+          </div>
+        )}
       </nav>
     </header>
   );

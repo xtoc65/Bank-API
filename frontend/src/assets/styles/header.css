@@ -6,6 +6,10 @@
 .nav_container img {
   height: 60px;
 }
+.nav_container span {
+  padding: 10px 15px;
+  font-size: 18px;
+}
 
 .nav_link {
   padding: 10px 15px;
@@ -16,24 +20,4 @@
 }
 .nav_link .active {
   text-decoration: underline;
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .nav_container {
-    margin: 0em 2em;
-  }
-  .nav_container img {
-    height: 36px;
-  }
-  .nav_link {
-    text-transform: uppercase;
-    font-size: 12px;
-    padding: 10px;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 365px) {
-  .nav_link {
-    display: block;
-    padding: 5px;
-  }
 }/*# sourceMappingURL=header.css.map */
