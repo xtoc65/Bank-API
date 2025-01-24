@@ -49,19 +49,12 @@ function User() {
     const updatedFirstName = newFirstName || user.firstName;
     const updatedLastName = newLastName || user.lastName;
 
-    try {
-      dispatch(
-        updateUserProfile({
-          firstName: updatedFirstName,
-          lastName: updatedLastName,
-        })
-      );
-    } catch (error) {
-      console.error(
-        "Erreur lors de la mise a jour du profile utilisateur:",
-        error
-      );
-    }
+    dispatch(
+      updateUserProfile({
+        firstName: updatedFirstName,
+        lastName: updatedLastName,
+      })
+    );
   };
 
   return (
